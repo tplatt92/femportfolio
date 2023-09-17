@@ -1,0 +1,39 @@
+:root {
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-body: 1.125rem;
+  --fs-heading-xl: 5.5rem;
+  --fs-heading-l: 3rem;
+  --fs-heading-m: 1.5rem;
+  --fs-heading-tab: 4.5rem;
+  --fs-heading-mob: 2.5rem;
+  --fs-heading-mob2: 2rem;
+
+  --clr-accent: #4ee1a0;
+  --clr-bg-body: #151515;
+  --clr-text: #ffffff;
+  --clr-text2: #d9d9d9;
+  --clr-bg-contact: #242424;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--clr-text);
+  background-color: var(--clr-bg-body);
+  color: var(--clr-text);
+  font-size: var(--fs-body);
+  line-height: 1.56;
+}
