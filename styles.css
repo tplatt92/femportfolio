@@ -123,3 +123,21 @@ img {
     margin-inline-end: auto;
   }
 }
+
+/* Hero section */
+
+.hero-img {
+  width: 46vw;
+}
+
+@media (max-width: 599.98px) {
+  .hero-img {
+    width: 42vw;
+  }
+}
+
+@media (max-width: 999.98px) {
+  .hero-img {
+    width: 31vw;
+  }
+}
