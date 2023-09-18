@@ -92,6 +92,13 @@ p {
 h1 {
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 0.7rem + 7.6vw, 5.5rem);
+  margin-bottom: 24px;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    margin-bottom: 60px;
+  }
 }
 
 img {
@@ -156,10 +163,12 @@ img {
 /* Hero section */
 
 .hero {
-  text-align: center;
 }
 
 .hero-wrapper {
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--clr-text2);
+  position: relative;
 }
 
 .hero-img {
@@ -167,6 +176,18 @@ img {
   min-width: 348px;
   margin: 20px auto 40px;
   border-radius: 0 0 120px 120px;
+}
+
+.hero-rings {
+  position: absolute;
+  right: 72%;
+}
+
+.hero-circle {
+  position: absolute;
+  top: 219px;
+  right: 0;
+  translate: 60%;
 }
 
 .hero-heading {
@@ -178,6 +199,7 @@ img {
 }
 
 .hero-text {
+  text-align: center;
 }
 
 .hero-contact {
