@@ -16,7 +16,7 @@
   --clr-text2: #d9d9d9;
   --clr-bg-contact: #242424;
 
-  --wrapper: 69.375rem;
+  --wrapper: 86.375rem;
 }
 
 html,
@@ -152,6 +152,7 @@ img {
     align-items: center;
     text-align: left;
     gap: 32px;
+    margin-bottom: 40px;
   }
 
   .home {
@@ -208,21 +209,49 @@ img {
 @media (min-width: 600px) {
   .hero-img {
     width: 42vw;
+    min-width: 350px;
     max-width: 480px;
+  }
+
+  .hero-circle {
+    top: 250px;
   }
 
   .underline {
     border-bottom: 6px solid var(--clr-accent);
   }
+
+  .hero-text {
+    text-align: left;
+    margin-top: 0;
+    width: 58vw;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
   .hero-img {
-    width: 31vw;
+    width: 52vw;
     max-width: 890px;
+  }
+
+  .hero-circle {
+    top: 370px;
+  }
+
+  .hero-rings {
+    right: 90%;
   }
 
   .underline {
     border-bottom: 8px solid var(--clr-accent);
+  }
+
+  .hero-text {
+    margin-top: 100px;
   }
 }
