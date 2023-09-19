@@ -270,3 +270,25 @@ img {
     margin-bottom: 5rem;
   }
 }
+
+/* Skills Section */
+
+.skills-section {
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding-block: 40px;
+}
+
+.skills-item {
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-size: clamp(2rem, 0.33rem + 7.1vw, 3rem);
+  line-height: 1.17;
+}

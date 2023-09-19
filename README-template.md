@@ -78,7 +78,8 @@ semantic html using svgs
 
 ```css
 clamp
-  function
+  <p
+  > function
   mobile
   first
   approach
@@ -93,7 +94,13 @@ clamp
   using
   decorative
   images
-  .proud-of-this-css {
+  padding
+  block
+  margin
+  inline
+  grid
+  </p
+  > .proud-of-this-css {
   color: papayawhip;
 }
 ```
