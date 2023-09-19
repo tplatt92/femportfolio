@@ -177,6 +177,7 @@ img {
   min-width: 348px;
   margin: 20px auto 40px;
   border-radius: 0 0 120px 120px;
+  background-size: cover;
 }
 
 .hero-rings {
@@ -204,6 +205,10 @@ img {
   text-align: center;
 }
 
+.hero-description {
+  max-width: 31.25rem;
+  margin-bottom: 2.5rem;
+}
 .hero-contact {
 }
 
@@ -222,21 +227,26 @@ img {
     border-bottom: 6px solid var(--clr-accent);
   }
 
+  .hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .hero-text {
     text-align: left;
     margin-top: 0;
     width: 58vw;
   }
 
-  .hero-content {
-    display: flex;
-    flex-direction: row-reverse;
+  .hero-description {
+    margin-bottom: 3.75rem;
   }
 }
 
 @media (min-width: 62.5em) {
   .hero-img {
     width: 52vw;
+    min-width: 450px;
     max-width: 890px;
   }
 
@@ -254,5 +264,9 @@ img {
 
   .hero-text {
     margin-top: 100px;
+  }
+
+  .hero-description {
+    margin-bottom: 5rem;
   }
 }
