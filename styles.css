@@ -105,6 +105,10 @@ img {
   display: block;
 }
 
+.page-break {
+  border-bottom: 1px solid var(--clr-text2);
+}
+
 /* Header */
 
 /* fluid typography using clamp */
@@ -163,12 +167,8 @@ img {
 
 /* Hero section */
 
-.hero {
-}
-
 .hero-wrapper {
   padding-bottom: 80px;
-  border-bottom: 1px solid var(--clr-text2);
   position: relative;
 }
 
@@ -193,7 +193,6 @@ img {
 }
 
 .hero-heading {
-  text-wrap: balance;
   line-height: 1.1;
 }
 
@@ -209,10 +208,8 @@ img {
   max-width: 31.25rem;
   margin-bottom: 2.5rem;
 }
-.hero-contact {
-}
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .hero-img {
     width: 42vw;
     min-width: 350px;
@@ -274,12 +271,13 @@ img {
 /* Skills Section */
 
 .skills-section {
+  position: relative;
 }
 
 .skills-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 25px;
+  gap: 24px;
   padding-block: 40px;
 }
 
@@ -291,4 +289,43 @@ img {
   font-size: 2rem;
   font-size: clamp(2rem, 0.33rem + 7.1vw, 3rem);
   line-height: 1.17;
+  margin-bottom: 2px;
+}
+
+.skills-rings {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  translate: 0 50%;
+}
+
+@media (min-width: 37.5em) {
+  .skills-wrapper {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 52px;
+    column-gap: 24px;
+    padding-block: 52px 0;
+    border-bottom: none;
+  }
+
+  .skills-item {
+    text-align: left;
+  }
+
+  .skills-rings {
+    translate: 40% 50%;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .skills-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: 72px;
+    gap: 58px 30px;
+  }
+
+  .skills-rings {
+    left: 100%;
+    translate: -40%;
+  }
 }
