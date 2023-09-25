@@ -340,6 +340,12 @@ img {
   padding-block: 80px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+
 .projects-title {
   grid-column: 1 / 2;
   margin-block-end: 0;
@@ -350,18 +356,29 @@ img {
   justify-self: end;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+.projects-image {
+  display: block;
+  margin-block-end: 20px;
 }
 
 .projects-item {
   grid-column: 1 / 3;
 }
 
+.projects-name {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .projects-skills {
+  margin-inline-end: 18px;
 }
 
 .projects-links {
+}
+
+.projects-links a {
+  margin-inline-end: 30px;
 }
