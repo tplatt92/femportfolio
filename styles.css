@@ -82,6 +82,11 @@ a.link {
   padding-bottom: 10px;
 }
 
+a:focus-visible {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 2px;
+}
+
 h1,
 h2,
 h3 {
@@ -97,7 +102,8 @@ p {
 
 .heading {
   font-size: 2.5rem;
-  font-size: clamp(2.5rem, 0.7rem + 7.6vw, 5.5rem);
+  font-size: clamp(2.5rem, 0.7rem + 7.6vw, 4rem);
+  margin-top: 10px;
   margin-bottom: 24px;
 }
 
@@ -369,6 +375,11 @@ img {
   margin-block-end: 20px;
 }
 
+.projects-image {
+  height: auto;
+  width: 100%;
+}
+
 .projects-item {
   grid-column: 1 / 3;
 }
@@ -439,11 +450,6 @@ img {
     opacity: 0.5;
   }
 
-  .projects-image {
-    height: auto;
-    width: 100%;
-  }
-
   .projects-skills {
     margin-bottom: 0;
   }
@@ -454,5 +460,135 @@ img {
     justify-self: center;
     align-self: center;
     z-index: 1;
+  }
+}
+
+/* CONTACT */
+
+.contact {
+  position: relative;
+}
+
+.contact__wrapper {
+  padding-block: 84px;
+}
+
+.contact__headline {
+  margin-block-end: 1rem;
+}
+
+.contact__control {
+  position: relative;
+  margin-block-end: 16px;
+}
+
+.contact__control input,
+.contact__control textarea {
+  width: 100%;
+  padding-block: 16px;
+  padding-inline: 24px;
+  border: none;
+  border-bottom: 1px solid var(--clr-text);
+  background: transparent;
+  font-size: 1rem;
+  line-height: 1.625;
+  color: var(--clr-text);
+}
+
+.contact__control > *::placeholder {
+  color: var(--clr-text);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.contact__control textarea {
+  margin-block-end: 32px;
+}
+
+.contact__control.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__control button {
+  background-color: var(--clr-bg-contact);
+  border: none;
+}
+
+.contact__invalid-icon {
+  display: none;
+  width: var(--fs-24);
+  height: var(--fs-24);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  translate: -50% -50%;
+}
+
+.contact input:focus-visible:invalid ~ .contact__invalid-icon,
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+  display: inline-block;
+}
+
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+  top: 1.2rem;
+  right: 1.5rem;
+  translate: none;
+}
+
+.contact__rings {
+  position: absolute;
+  left: 0;
+  bottom: 97px;
+  translate: -75%;
+}
+
+@media (min-width: 37.5em) {
+  .contact__rings {
+    bottom: 47px;
+    translate: -75%;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 27.8rem);
+    justify-content: space-between;
+  }
+
+  .contact__headline {
+    margin-block-end: var(--fs-36);
+  }
+
+  .contact__rings {
+    translate: -40%;
+  }
+}
+
+/* 999.98px */
+@media (max-width: 62.49875em) {
+  .contact__wrapper {
+    max-width: 27.8rem;
+  }
+
+  .contact__text {
+    text-align: center;
+  }
+}
+
+footer {
+  padding-block: 40px 60px;
+}
+
+@media (min-width: 37.5em) {
+  footer {
+    padding-block: 30px 40px;
+  }
+}
+
+@media (min-width: 62.5em) {
+  footer {
+    padding-block: 47px 92px;
   }
 }
