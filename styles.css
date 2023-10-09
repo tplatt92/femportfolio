@@ -42,7 +42,6 @@ body {
   background-color: var(--clr-bg-body);
   font-size: var(--fs-body);
   line-height: 1.56;
-  padding-bottom: 25rem;
 }
 
 .wrapper {
@@ -467,6 +466,7 @@ img {
 
 .contact {
   position: relative;
+  background-color: var(--clr-bg-contact);
 }
 
 .contact__wrapper {
@@ -585,8 +585,10 @@ footer {
   footer {
     padding-block: 30px 40px;
   }
+  footer .header-nav {
+    margin-bottom: 0;
+  }
 }
-
 @media (min-width: 62.5em) {
   footer {
     padding-block: 47px 92px;

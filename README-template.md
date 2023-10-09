@@ -99,6 +99,10 @@ clamp
   margin
   inline
   grid
+  psuedo
+  elements
+  focus
+  within
   </p
   > .proud-of-this-css {
   color: papayawhip;
