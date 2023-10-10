@@ -16,10 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Frontend Mentor | Single-page developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Tom Platt - Software Engineer</title>
   </head>
   <body>
+    <div id="particles-js"></div>
     <header class="header">
       <h2 class="visually-hidden">Header</h1>
       <div class="wrapper">
@@ -35,14 +38,6 @@
           <a href="" class="social"
             ><img src="assets/images/icon-linkedin.svg" alt="linkedin icon"
           /></a>
-          <a href="" class="social"
-            ><img
-              src="assets/images/icon-frontend-mentor.svg"
-              alt="front-end-mentor icon"
-          /></a>
-          <a href="" class="social"
-            ><img src="assets/images/icon-twitter.svg" alt="twitter icon"
-          /></a>
         </nav>
       </div>
     </header>
@@ -50,20 +45,6 @@
     <main id="main" class="main">
       <section class="hero">
         <div class="wrapper hero-wrapper page-break">
-          <img
-            src="assets/images/pattern-rings.svg"
-            alt=""
-            width="530"
-            height="129"
-            class="hero-rings"
-          />
-          <img
-            src="assets/images/pattern-circle.svg"
-            alt=""
-            width="129"
-            height="129"
-            class="hero-circle"
-          />
           <div class="hero-content">
             <img
               src="assets/images/tomplatt-headshot.JPG"
@@ -76,12 +57,12 @@
                 Hey there! My name is <span class="link underline" >Tom Platt</span>.
               </h1>
               <p class="hero-description">
-                Based in the UK, I'm a front-end developer passionate about
-                building accessible web apps that users love.
+                Based in the UK, I'm a former Primary School Teacher turned Software Engineer.
               </p>
 
               <p>
                 <a href="" class="link"><span>CONTACT ME</span></a>
+                <a href="" class="link"><span>Curriculum vitae</span></a>
               </p>
             </div>
           </div>
@@ -92,27 +73,25 @@
         <div class="wrapper skills-wrapper page-break">
             <div class="skills-item">
               <h3 class="skills-title">HTML</h3>
-              <p class="skills-experience">Junior</p>
+         
             </div>
             <div class="skills-item">
               <h3 class="skills-title">CSS</h3>
-              <p class="skills-experience">Junior</p>
+         
             </div>
             <div class="skills-item">
               <h3 class="skills-title">JavaScript</h3>
-              <p class="skills-experience">Junior</p>
+         
             </div>
             <div class="skills-item">
               <h3 class="skills-title">React</h3>
-              <p class="skills-experience">Beginner</p>
             </div>
             <div class="skills-item">
-              <h3 class="skills-title">Accessibility</h3>
-              <p class="skills-experience">Junior</p>
+              <h3 class="skills-title">NodeJS</h3>
+         
             </div>
             <div class="skills-item">
-              <h3 class="skills-title">Debugging</h3>
-              <p class="skills-experience">Beginner</p>
+              <h3 class="skills-title">SQL</h3>
             </div>
         </div>
         <img
@@ -189,36 +168,6 @@
                       <a href="" class="link">View Code</a>
                     </div>
                   </div>
-                  <div class="projects-item">
-                      <picture class="projects-picture">
-                        <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-5-large.webp">
-                        <img class="projects-image" src="/assets/images/thumbnail-project-5-small.webp" alt="Design portfolio image" width="343" height="253">
-                      </picture>
-                      <h3 class="projects-name">Calculator</h3>
-                      <p class="projects-skills">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                      </p>
-                      <div class="projects-links">
-                        <a href="" class="link">View Project</a>
-                        <a href="" class="link">View Code</a>
-                      </div>
-                  </div>
-                  <div class="projects-item">
-                        <picture class="projects-picture">
-                          <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-6-large.webp">
-                          <img class="projects-image" src="/assets/images/thumbnail-project-6-small.webp" alt="Design portfolio image" width="343" height="253">
-                        </picture>
-                        <h3 class="projects-name">Art Gallery Showcase</h3>
-                        <p class="projects-skills">
-                          <span>HTML</span>
-                          <span>CSS</span>
-                        </p>
-                        <div class="projects-links">
-                          <a href="" class="link">View Project</a>
-                          <a href="" class="link">View Code</a>
-                        </div>
-                        </div>
             </div>
           </div>
         </div>
@@ -377,5 +326,7 @@
     </footer>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="index.js"></script>
+    <script src="particles.js"></script>
+    <script src="customparticles.js"></script>
   </body>
 </html>
