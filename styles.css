@@ -101,7 +101,7 @@ p {
 
 .heading {
   font-size: 2.5rem;
-  font-size: clamp(2.5rem, 0.7rem + 7.6vw, 4rem);
+  font-size: clamp(2.5rem, 0.7rem + 7.6vw, 3.5rem);
   margin-top: 10px;
   margin-bottom: 24px;
 }
@@ -147,6 +147,10 @@ img {
 
 .social {
   display: inline-block;
+}
+
+.social-icon:hover {
+  fill: #4ee1a0;
 }
 
 .visually-hidden {
@@ -218,6 +222,10 @@ canvas {
   top: 219px;
   right: 0;
   translate: 60%;
+}
+
+.hero-eyebrow {
+  font-size: 2rem;
 }
 
 .hero-heading {
@@ -624,4 +632,58 @@ footer {
   footer {
     padding-block: 47px 92px;
   }
+}
+
+/* Fade in Animations */
+
+.fade-in-text {
+  animation: fadeIn 3s;
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 35em) {
+  .tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  }
+
+  .tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 62.5em) {
+  .tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  }
+
+  .tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.hero-text h1 a {
+  text-transform: none;
+  color: var(--clr-accent);
+}
+
+.typewrite {
+  overflow: hidden;
 }
