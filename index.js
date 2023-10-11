@@ -32,12 +32,12 @@ contactForm.addEventListener("submit", (e) => {
 
 // Fade-in-on-scroll
 
-document.addEventListener("scroll", function () {
-  var pageTop = document.documentElement.scrollTop;
-  var pageBottom = pageTop + window.innerHeight;
-  var tags = document.querySelectorAll(".tag");
+document.addEventListener("scroll", () => {
+  const pageTop = document.documentElement.scrollTop;
+  const pageBottom = pageTop + window.innerHeight;
+  const tags = document.querySelectorAll(".tag");
 
-  tags.forEach(function (tag) {
+  tags.forEach((tag) => {
     if (tag.getBoundingClientRect().top < pageBottom) {
       tag.classList.add("visible");
     } else {
