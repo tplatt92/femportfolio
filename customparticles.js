@@ -1,217 +1,108 @@
-// particlesJS(
-//   "particles-js",
-
-//   {
-//     particles: {
-//       number: {
-//         value: 80,
-//         density: {
-//           enable: true,
-//           value_area: 800,
-//         },
-//       },
-//       color: {
-//         value: "#ffffff",
-//       },
-//       shape: {
-//         type: "circle",
-//         stroke: {
-//           width: 0,
-//           color: "#000000",
-//         },
-//         polygon: {
-//           nb_sides: 5,
-//         },
-//         image: {
-//           src: "img/github.svg",
-//           width: 100,
-//           height: 100,
-//         },
-//       },
-//       opacity: {
-//         value: 0.5,
-//         random: false,
-//         anim: {
-//           enable: false,
-//           speed: 1,
-//           opacity_min: 0.1,
-//           sync: false,
-//         },
-//       },
-//       size: {
-//         value: 5,
-//         random: true,
-//         anim: {
-//           enable: false,
-//           speed: 40,
-//           size_min: 0.1,
-//           sync: false,
-//         },
-//       },
-//       line_linked: {
-//         enable: true,
-//         distance: 150,
-//         color: "#ffffff",
-//         opacity: 0.4,
-//         width: 1,
-//       },
-//       move: {
-//         enable: true,
-//         speed: 6,
-//         direction: "none",
-//         random: false,
-//         straight: false,
-//         out_mode: "out",
-//         attract: {
-//           enable: false,
-//           rotateX: 600,
-//           rotateY: 1200,
-//         },
-//       },
-//     },
-//     interactivity: {
-//       detect_on: "canvas",
-//       events: {
-//         onhover: {
-//           enable: true,
-//           mode: "repulse",
-//         },
-//         onclick: {
-//           enable: true,
-//           mode: "push",
-//         },
-//         resize: true,
-//       },
-//       modes: {
-//         grab: {
-//           distance: 400,
-//           line_linked: {
-//             opacity: 1,
-//           },
-//         },
-//         bubble: {
-//           distance: 400,
-//           size: 40,
-//           duration: 2,
-//           opacity: 8,
-//           speed: 3,
-//         },
-//         repulse: {
-//           distance: 200,
-//         },
-//         push: {
-//           particles_nb: 4,
-//         },
-//         remove: {
-//           particles_nb: 2,
-//         },
-//       },
-//     },
-//     retina_detect: true,
-//     config_demo: {
-//       hide_card: false,
-//       background_color: "#b61924",
-//       background_image: "",
-//       background_position: "50% 50%",
-//       background_repeat: "no-repeat",
-//       background_size: "cover",
-//     },
-//   }
-// );
-
+// Initialize particles.js on the element with id "particles-js"
 particlesJS("particles-js", {
+  // Particle options
   particles: {
+    // Number of particles and their density configuration
     number: {
-      value: 100,
+      value: 100, // Number of particles
       density: {
-        enable: true,
-        value_area: 1000,
+        enable: true, // Enable density configuration
+        value_area: 1000, // Area within which particles are densely packed
       },
     },
+    // Color configuration for the particles
     color: {
-      value: ["#ffffff", "#4ee1a0", "#d9d9d9"],
+      value: ["#ffffff", "#4ee1a0", "#d9d9d9"], // Array of colors particles can be
     },
-
+    // Shape configuration for the particles
     shape: {
-      type: "circle",
+      type: "circle", // Shape of particles (circle, edge, triangle, polygon, star, image)
       stroke: {
-        width: 0,
-        color: "#fff",
+        width: 0, // Stroke width of the particles
+        color: "#fff", // Stroke color of the particles
       },
       polygon: {
-        nb_sides: 5,
+        nb_sides: 5, // Number of sides if the shape is a polygon
       },
       image: {
-        src: "img/github.svg",
-        width: 100,
-        height: 100,
+        src: "img/github.svg", // Image source if the shape is an image
+        width: 100, // Width of the image particles
+        height: 100, // Height of the image particles
       },
     },
+    // Opacity configuration for the particles
     opacity: {
-      value: 0.6,
-      random: false,
+      value: 0.6, // Opacity of the particles
+      random: false, // Randomize particle opacity if true
       anim: {
-        enable: false,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false,
+        enable: false, // Enable opacity animation
+        speed: 1, // Speed of the opacity animation
+        opacity_min: 0.1, // Minimum opacity during the animation
+        sync: false, // Sync the opacity animation if true
       },
     },
+    // Size configuration for the particles
     size: {
-      value: 2,
-      random: true,
+      value: 2, // Size of the particles
+      random: true, // Randomize particle size if true
       anim: {
-        enable: false,
-        speed: 40,
-        size_min: 0.1,
-        sync: false,
+        enable: false, // Enable size animation
+        speed: 40, // Speed of the size animation
+        size_min: 0.1, // Minimum size during the animation
+        sync: false, // Sync the size animation if true
       },
     },
+    // Line linked configuration between particles
     line_linked: {
-      enable: true,
-      distance: 120,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 1,
+      enable: true, // Enable line links between particles
+      distance: 120, // Distance between linked particles
+      color: "#ffffff", // Color of the links
+      opacity: 0.4, // Opacity of the links
+      width: 1, // Width of the links
     },
   },
+  // Interactivity configuration for the particles
   interactivity: {
-    detect_on: "canvas",
+    detect_on: "canvas", // Event detection area ("canvas", "window")
     events: {
+      // Mouse hover interaction
       onhover: {
-        enable: true,
-        mode: "grab",
+        enable: true, // Enable on-hover interaction
+        mode: "grab", // Interaction mode (grab, bubble, repulse, etc.)
       },
+      // Mouse click interaction
       onclick: {
-        enable: false,
+        enable: false, // Disable on-click interaction
       },
-      resize: true,
+      // Window resize detection
+      resize: true, // Resize particles when the window is resized
     },
+    // Interaction modes configuration
     modes: {
       grab: {
-        distance: 140,
+        distance: 140, // Distance particles are grabbed during interaction
         line_linked: {
-          opacity: 1,
+          opacity: 1, // Opacity of the link when particles are grabbed
         },
       },
       bubble: {
-        distance: 400,
-        size: 40,
-        duration: 2,
-        opacity: 8,
-        speed: 3,
+        distance: 400, // Distance at which bubbles are created
+        size: 40, // Size of the bubbles
+        duration: 2, // Duration of the bubble animation
+        opacity: 8, // Opacity of the bubbles
+        speed: 3, // Speed of the bubble animation
       },
       repulse: {
-        distance: 200,
-        duration: 0.4,
+        distance: 200, // Distance particles are repulsed
+        duration: 0.4, // Duration of the repulsion animation
       },
       push: {
-        particles_nb: 4,
+        particles_nb: 4, // Number of particles to push
       },
       remove: {
-        particles_nb: 2,
+        particles_nb: 2, // Number of particles to remove
       },
     },
   },
-  retina_detect: true,
+  retina_detect: true, // Enable retina detection for better performance on high-resolution screens
 });
