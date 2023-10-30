@@ -141,6 +141,7 @@ img {
 
 .header {
   margin-block-start: 20px;
+  pointer-events: none;
 }
 
 .header-nav {
