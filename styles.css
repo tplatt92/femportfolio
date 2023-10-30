@@ -19,6 +19,11 @@
   --wrapper: 86.375rem;
 }
 
+@font-face {
+  font-family: "futurePTBook";
+  src: url(./assets/fonts/FuturaPT-Book.woff);
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -37,7 +42,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inconsolata", monospace;
   color: var(--clr-text);
   background-color: var(--clr-bg-body);
   font-size: var(--fs-body);
@@ -89,6 +94,7 @@ a:focus-visible {
 h1,
 h2,
 h3 {
+  font-family: "futurePTBook";
   line-height: 1;
 }
 
@@ -147,6 +153,7 @@ img {
 }
 
 .home {
+  font-family: "futurePTBook";
   font-size: var(--fs-heading-m);
   font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
   color: var(--clr-text);
@@ -233,6 +240,7 @@ canvas {
 
 .hero-heading {
   line-height: 1.1;
+  font-family: "futurePTBook";
   font-size: 2rem;
   text-wrap: balance;
 }
@@ -369,11 +377,13 @@ canvas {
   }
 
   .about-image {
-    grid-column: 3/5;
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 
   .about-text {
-    grid-column: 1/3;
+    grid-column: 3/5;
+    text-align: center;
   }
 
   .about-img {
@@ -413,7 +423,7 @@ canvas {
 
 .skills-wrapper img:hover {
   transform: scale(1.1);
-  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in-out;
 }
 
 .skills-item {
@@ -465,9 +475,6 @@ canvas {
 
 /* Projects Section */
 
-.projects {
-}
-
 .projects-wrapper {
   padding-block: 80px;
 }
@@ -481,6 +488,7 @@ canvas {
 .projects-title {
   grid-column: 1 / 2;
   margin-block-end: 0;
+  font-family: "futurePTBook";
 }
 
 .projects-contact {
@@ -517,9 +525,6 @@ canvas {
   color: var(--clr-text2);
 }
 
-.projects-links {
-}
-
 .projects-links a {
   margin-inline-end: 30px;
 }
@@ -544,6 +549,7 @@ canvas {
 
   .projects-item {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
   }
@@ -595,6 +601,11 @@ canvas {
 
 .contact__headline {
   margin-block-end: 1rem;
+  font-family: "futurePTBook";
+}
+
+.contact__description {
+  margin-block-start: 1rem;
 }
 
 .contact__control {
@@ -632,7 +643,15 @@ canvas {
 
 .contact__control button {
   background-color: var(--clr-bg-contact);
-  border: none;
+  border: solid 2px var(--clr-text);
+  padding: 10px 20px;
+  color: var(--clr-text);
+  transition: transform 500ms;
+  cursor: pointer;
+}
+
+.contact__control button:hover {
+  transform: scale(1.1);
 }
 
 .contact__invalid-icon {
@@ -679,6 +698,10 @@ canvas {
 
   .contact__headline {
     margin-block-end: var(--fs-36);
+  }
+
+  .contact__description {
+    margin-block-start: 2rem;
   }
 
   .contact__rings {
