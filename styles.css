@@ -160,6 +160,7 @@ img {
   color: var(--clr-text);
   text-decoration: none;
   flex: 1 0 100%;
+  pointer-events: auto;
 }
 
 .social {
@@ -168,6 +169,7 @@ img {
 
 .social-icon {
   transition: fill 200ms ease-in;
+  pointer-events: auto;
 }
 
 .social-icon:hover {
