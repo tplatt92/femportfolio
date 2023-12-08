@@ -438,6 +438,11 @@ canvas {
   cursor: pointer;
 }
 
+.skills-item:hover {
+  background-color: #d9d9d9;
+  color: #242424;
+}
+
 .skills-rings {
   position: absolute;
   left: 50%;
